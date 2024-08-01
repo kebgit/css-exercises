@@ -50,10 +50,39 @@ body {
   padding: 0;
 }
 
+.popup{
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  background-color: #ffffff;
+  width: 480px;
+  border-radius: 10px;
+}
+.exclamation{
+  flex:0
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.right .heading{
+  display: flex;
+  justify-content: space-between;
+}
+
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+}
+
+.buttons{
+  display: flex;
+  gap: 10px;
+  flex-wrap: nowrap;
 }
 
 button.continue {
@@ -66,4 +95,12 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.header {
+  font-weight: bold;
+}
+
+.close-button{
+  flex-shrink: 0;
 }
